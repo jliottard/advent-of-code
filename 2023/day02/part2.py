@@ -9,7 +9,6 @@ if __name__ == "__main__":
     with open(sys.argv[1], "rt") as input_file:
         powers = 0
         for line in input_file:
-            game_is_possible = True
             game, sets = line.split(":")
             game_id = game.split(" ")[-1]
             drawn_sets = sets.split(";")
